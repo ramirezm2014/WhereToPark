@@ -12,10 +12,10 @@
 <body>
 	<div class='container'>
 		<div class='row'>
-			<a href="http://lamp.cse.fau.edu/~alyman2013/Principles">
+			<div class='col-lg'>
+				<a href="http://lamp.cse.fau.edu/~alyman2013/Principles">
 			<?php 
-				echo "<div class='col-lg'>
-						<button name='permit' type='submit' value='";
+				echo "<button id='permitColor' name='permit' type='submit' value='";
 				echo $_GET['permit'];
 				echo"' class='permit ";
 				echo $_GET['permit'];
@@ -433,6 +433,11 @@
 			</div>
 		</div>
 	</div>
+	<!-- Gradient scale -->
+
+	<!-- Switch for after hours/Message if between after hours -->
+	
+	<!-- Footer -->
 	<div class='container'>
 		<div class='row'>
 			<button id='aboutbtn' class='col-xs-3 bottom-text'>About Us</button>
@@ -453,15 +458,17 @@
 			</div>
 		</div>
 	</div>
-	<!-- Gradient scale -->
-
-	<!-- Switch for after hours/Message if between after hours -->
-	
-	<!-- Footer -->
+	<!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/buttonbs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/function.js"></script>
 	<script src="js/map.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXYNtA46UEM0fX_ttBeq7cco3fNOl4iIE&callback=initMap" async defer></script>
+	<script src="js/redPermit.js"></script>
+	<script src="js/greenPermit.js"></script>
+	<script src="js/bluePermit.js"></script>
+	<script src="js/yellowPermit.js"></script>
+	<script src="js/handicapPermit.js"></script>
+	<script src="js/motorPermit.js"></script>
 </body>
 </html>

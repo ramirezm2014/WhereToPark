@@ -1,11 +1,5 @@
 function initMap()
 {
-	var map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 26.370653, lng: -80.102302},
-		zoom: 15,
-		disableDefaultUI: true
-	});
-	
 	var map_design = new google.maps.StyledMapType(
 		[
 			{
@@ -111,45 +105,44 @@ function initMap()
 		],
 		{name: 'Custom Map'}
 	);
+	
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 26.370653, lng: -80.102302},
+		zoom: 15,
+		//disableDefaultUI: true,
+		mapTypeControlOptions: {
+			mapTypeIds: ['styled_map', 'satellite']}
+	});
+	
 	map.mapTypes.set('styled_map', map_design);
 	map.setMapTypeId('styled_map');
-
-	var lot1Blue = new google.maps.Polygon({
-		paths: [
-			{lat: 26.371600, lng: -80.099704},
-			{lat: 26.371600, lng: -80.098824},
-			{lat: 26.371505, lng: -80.098824},
-			{lat: 26.371189, lng: -80.098795},		
-			{lat: 26.369740, lng: -80.098783},
-			{lat: 26.369740, lng: -80.099180},
-			{lat: 26.370075, lng: -80.099180},	
-			{lat: 26.370075, lng: -80.099373},
-			{lat: 26.370680, lng: -80.099373},	
-			{lat: 26.370680, lng: -80.099180},
-			{lat: 26.371500, lng: -80.099180},
-			{lat: 26.371500, lng: -80.099704},
-			{lat: 26.371600, lng: -80.099704}],
-		strokeColor: 'blue',
-		strokeOpacity: 0.8,
-		strokeWeight: 2,
-		fillColor: 'blue',
-		fillOpacity: 0.35 //This opacity will be to determine availability
-	});
-	lot1Blue.setMap(map);
 	
-	var lot1Red = new google.maps.Polygon({
-		paths: [
-			{lat: 26.371498, lng: -80.099629},
-			{lat: 26.371498, lng: -80.099182},
-			{lat: 26.370682, lng: -80.099182},
-			{lat: 26.370682, lng: -80.099629},
-			{lat: 26.371498, lng: -80.099629}
-		],
-		strokeColor: 'red',
-		strokeOpacity: 0.8,
-		strokeWeight: 2,
-		fillColor: 'red',
-		fillOpacity: 0.35 //This opacity will be to determine availability
-	});
-	lot1Red.setMap(map);
+	var permit = document.getElementById('permitColor').value;
+	if (permit != "guest")
+	{
+		handicapPark(map);
+		motorPark(map);
+	}
+	if (permit == "staff")
+		redPark(map);
+	else if (permit == "resident")
+		greenPark(map);
+	else if (permit == "nonresident")
+		bluePark(map);
+	else if (permit == "guest")
+		yellowPark(map);
+	else
+	{
+		redPark(map);
+		greenPark(map);
+		bluePark(map);
+		yellowPark(map);
+	}
 }
+
+
+/* Comments/Concerns:
+1. Lot 1 Carpooling (red permit or blue permit?)
+2. Lot 2 Street view is not up to date with bird's eye view so bottom left spots are not confirmed
+3. Keep polygons with the same color and on the same lot as the same data percentage (ex. 2a and 2b = lot 2 availability)
+*/
