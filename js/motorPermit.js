@@ -98,4 +98,46 @@ function motorPark(map)
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
 	lot35.setMap(map);
+	
+	var lot60 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.369698, lng: -80.096299},
+			{lat: 26.369697, lng: -80.096206},
+			{lat: 26.369650, lng: -80.096206},
+			{lat: 26.369651, lng: -80.096297}],
+		strokeColor: 'orange',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'orange',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot60.setMap(map);
+	
+	var lotGarage1 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.371894, lng: -80.106097},
+			{lat: 26.371894, lng: -80.105972},
+			{lat: 26.371789, lng: -80.105972},
+			{lat: 26.371789, lng: -80.106097}],
+		strokeColor: 'orange',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'orange',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotGarage1.setMap(map);
+	
+	var lotGarage2 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.369372, lng: -80.099602},
+			{lat: 26.369372, lng: -80.099480},
+			{lat: 26.369267, lng: -80.099480},
+			{lat: 26.369267, lng: -80.099602}],
+		strokeColor: 'orange',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'orange',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotGarage2.setMap(map);		
 }

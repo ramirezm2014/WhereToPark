@@ -145,4 +145,5 @@ function initMap()
 1. Lot 1 Carpooling (red permit or blue permit?)
 2. Lot 2 Street view is not up to date with bird's eye view so bottom left spots are not confirmed
 3. Keep polygons with the same color and on the same lot as the same data percentage (ex. 2a and 2b = lot 2 availability)
+4. Lots like UVA and Lot45 have visitor parking spots that allow free parking without FAU permits; if you have a valid FAU permit, you CANNOT park in these spots
 */

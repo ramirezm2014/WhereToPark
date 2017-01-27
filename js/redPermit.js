@@ -87,7 +87,21 @@ function redPark(map)
 	});
 	lot4CP.setMap(map); //Carpool
 	
-	
+	var lot7 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.374344, lng: -80.105476},
+			{lat: 26.374349, lng: -80.105018},
+			{lat: 26.373983, lng: -80.105012},
+			{lat: 26.373983, lng: -80.105105},
+			{lat: 26.373741, lng: -80.105099},
+			{lat: 26.373737, lng: -80.105464}],
+		strokeColor: 'red',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'red',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot7.setMap(map);
 	var lot8 = new google.maps.Polygon({
 		paths: [
 			{lat: 26.373628, lng: -80.107048},
@@ -275,4 +289,18 @@ function redPark(map)
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
 	lot46.setMap(map);
+	
+	var lot49 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.372677, lng: -80.106898},
+			{lat: 26.372677, lng: -80.106828},
+			{lat: 26.372309, lng: -80.106828},
+			{lat: 26.372309, lng: -80.106898}],
+		strokeColor: 'red',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'red',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot49.setMap(map);
 }
