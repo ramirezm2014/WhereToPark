@@ -72,7 +72,7 @@ function bluePark(map)
 	});
 	lotEEDrop.setMap(map); // This parking lot contains Carpool spot and Hybrid car spot
 	
-	var lot4Left = new google.maps.Polygon({
+	var lot4a = new google.maps.Polygon({
 		paths: [
 			{lat: 26.374327, lng: -80.101343},
 			{lat: 26.374327, lng: -80.101250},
@@ -84,8 +84,8 @@ function bluePark(map)
 		fillColor: 'blue',
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
-	lot4Left.setMap(map);
-	var lot4Right = new google.maps.Polygon({
+	lot4a.setMap(map);
+	var lot4b = new google.maps.Polygon({
 		paths: [
 			{lat: 26.374412, lng: -80.100084},
 			{lat: 26.374444, lng: -80.100071},
@@ -114,15 +114,15 @@ function bluePark(map)
 			{lat: 26.373295, lng: -80.098404},
 			{lat: 26.373257, lng: -80.098446},
 			{lat: 26.373257, lng: -80.098492},
-			{lat: 26.373790, lng: -80.098492},
-			{lat: 26.373771, lng: -80.100079}],
+			{lat: 26.373825, lng: -80.098492},
+			{lat: 26.373808, lng: -80.100079}],
 		strokeColor: 'blue',
 		strokeOpacity: 0.8,
 		strokeWeight: 2,
 		fillColor: 'blue',
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
-	lot4Right.setMap(map);
+	lot4b.setMap(map);
 	
 	var lot5 = new google.maps.Polygon({
 		paths: [
@@ -137,6 +137,81 @@ function bluePark(map)
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
 	lot5.setMap(map);
+	
+	var lot7a = new google.maps.Polygon({
+		paths: [
+			{lat: 26.373857, lng: -80.106834},
+			{lat: 26.373900, lng: -80.106803},
+			{lat: 26.373941, lng: -80.106766},
+			{lat: 26.373981, lng: -80.106729},
+			{lat: 26.374020, lng: -80.106691},
+			{lat: 26.374056, lng: -80.106651},
+			{lat: 26.374091, lng: -80.106609},
+			{lat: 26.374123, lng: -80.106566},
+			{lat: 26.374155, lng: -80.106519},
+			{lat: 26.374186, lng: -80.106474},
+			{lat: 26.374219, lng: -80.106413},
+			{lat: 26.374252, lng: -80.106350},
+			{lat: 26.374209, lng: -80.106322},
+			{lat: 26.374243, lng: -80.106254},
+			{lat: 26.374264, lng: -80.106198},
+			{lat: 26.374282, lng: -80.106146},
+			{lat: 26.374301, lng: -80.106084},
+			{lat: 26.374314, lng: -80.106028},
+			{lat: 26.374329, lng: -80.105949},
+			{lat: 26.374340, lng: -80.105871},
+			{lat: 26.374344, lng: -80.105478},
+			{lat: 26.373737, lng: -80.105467},
+			{lat: 26.373729, lng: -80.106110},
+			{lat: 26.373974, lng: -80.106110},
+			{lat: 26.373974, lng: -80.106203},
+			{lat: 26.373729, lng: -80.106203},
+			{lat: 26.373719, lng: -80.106643},
+			{lat: 26.373722, lng: -80.106690},
+			{lat: 26.373728, lng: -80.106724},
+			{lat: 26.373737, lng: -80.106767},
+			{lat: 26.373751, lng: -80.106808},
+			{lat: 26.373765, lng: -80.106845},
+			{lat: 26.373783, lng: -80.106881}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot7a.setMap(map);
+	var lot7b = new google.maps.Polygon({
+		paths: [
+			{lat: 26.374335, lng: -80.104756},
+			{lat: 26.374336, lng: -80.104702},
+			{lat: 26.374319, lng: -80.104664},
+			{lat: 26.374324, lng: -80.104001},
+			{lat: 26.374245, lng: -80.103912},
+			{lat: 26.374246, lng: -80.103747},
+			{lat: 26.374201, lng: -80.103747},
+			{lat: 26.374201, lng: -80.103840},
+			{lat: 26.374118, lng: -80.103840},
+			{lat: 26.374118, lng: -80.103747},
+			{lat: 26.373799, lng: -80.103745},
+			{lat: 26.373791, lng: -80.103787},
+			{lat: 26.373782, lng: -80.103824},
+			{lat: 26.373775, lng: -80.103866},
+			{lat: 26.373766, lng: -80.103925},
+			{lat: 26.373755, lng: -80.104663},
+			{lat: 26.373988, lng: -80.104663},
+			{lat: 26.373988, lng: -80.104753}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot7b.setMap(map);
+	
+	
+			
+			
+			
 	
 	var lot10 = new google.maps.Polygon({
 		paths: [
@@ -398,7 +473,25 @@ function bluePark(map)
 	});
 	lot27.setMap(map);
 	
-	var lot30 = new google.maps.Polygon({
+	var lot28 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.369437, lng: -80.098520},
+			{lat: 26.369431, lng: -80.097722},
+			{lat: 26.369384, lng: -80.097722},
+			{lat: 26.369382, lng: -80.097667},
+			{lat: 26.368413, lng: -80.097673},
+			{lat: 26.368409, lng: -80.098581},
+			{lat: 26.369383, lng: -80.098574},
+			{lat: 26.369383, lng: -80.098520}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot28.setMap(map);
+	
+	var lot30a = new google.maps.Polygon({
 		paths: [
 			{lat: 26.376880, lng: -80.096979},
 			{lat: 26.376880, lng: -80.096795},
@@ -410,5 +503,96 @@ function bluePark(map)
 		fillColor: 'blue',
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
-	lot30.setMap(map);
+	lot30a.setMap(map);
+	var lot30b = new google.maps.Polygon({
+		paths: [
+			{lat: 26.376513, lng: -80.096684},
+			{lat: 26.376529, lng: -80.095494},
+			{lat: 26.376434, lng: -80.095494},
+			{lat: 26.376434, lng: -80.095379},
+			{lat: 26.376264, lng: -80.095377},
+			{lat: 26.376260, lng: -80.095777},
+			{lat: 26.376260, lng: -80.095777},
+			{lat: 26.376343, lng: -80.095777},
+			{lat: 26.376342, lng: -80.095900},
+			{lat: 26.376257, lng: -80.095900},
+			{lat: 26.376251, lng: -80.096682}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot30b.setMap(map);
+	
+	var lotGarage1a = new google.maps.Polygon({
+		paths: [
+			{lat: 26.372607, lng: -80.106420},
+			{lat: 26.372607, lng: -80.105684},
+			{lat: 26.371789, lng: -80.105684},
+			{lat: 26.371789, lng: -80.105969},
+			{lat: 26.372003, lng: -80.105969},
+			{lat: 26.372003, lng: -80.106100},
+			{lat: 26.371789, lng: -80.106100},
+			{lat: 26.371789, lng: -80.106420}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotGarage1a.setMap(map);
+	var lotGarage1b = new google.maps.Polygon({
+		paths: [
+			{lat: 26.371671, lng: -80.107074},
+			{lat: 26.371671, lng: -80.106413},
+			{lat: 26.371730, lng: -80.106413},
+			{lat: 26.371730, lng: -80.106275},
+			{lat: 26.371671, lng: -80.106275},
+			{lat: 26.371669, lng: -80.105453},
+			{lat: 26.371618, lng: -80.105453},
+			{lat: 26.371620, lng: -80.107074}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotGarage1b.setMap(map);
+	
+	var lotGarage2 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.369369, lng: -80.099911},
+			{lat: 26.369372, lng: -80.099604},
+			{lat: 26.369158, lng: -80.099604},
+			{lat: 26.369158, lng: -80.099477},
+			{lat: 26.369372, lng: -80.099477},
+			{lat: 26.369375, lng: -80.099214},
+			{lat: 26.368554, lng: -80.099204},
+			{lat: 26.368547, lng: -80.099901}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotGarage2.setMap(map);
+	
+	var lotGarage3 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.375468, lng: -80.104715},
+			{lat: 26.375479, lng: -80.103416},
+			{lat: 26.374981, lng: -80.103414},
+			{lat: 26.374966, lng: -80.104713},
+			{lat: 26.375161, lng: -80.104713},
+			{lat: 26.375161, lng: -80.104611},
+			{lat: 26.375275, lng: -80.104611},
+			{lat: 26.375275, lng: -80.104715}],
+		strokeColor: 'blue',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'blue',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotGarage3.setMap(map);
 }

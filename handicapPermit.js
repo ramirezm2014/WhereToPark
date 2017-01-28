@@ -630,4 +630,17 @@ function handicapPark(map)
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
 	lotPBPlb.setMap(map);
+	var lotArtsandLett = new google.maps.Polygon({
+		paths: [
+			{lat: 26.369768, lng: -80.102606},
+			{lat: 26.369768, lng: -80.102511},
+			{lat: 26.369423, lng: -80.102511},
+			{lat: 26.369423, lng: -80.102604}],
+		strokeColor: 'purple',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'purple',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotArtsandLett.setMap(map);
 }

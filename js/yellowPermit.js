@@ -14,6 +14,22 @@ function yellowPark(map)
 	});
 	lot1.setMap(map);
 	
+	var lot7 = new google.maps.Polygon({
+		paths: [
+			{lat: 26.374402, lng: -80.104702},
+			{lat: 26.374406, lng: -80.103986},
+			{lat: 26.374316, lng: -80.103986},
+			{lat: 26.374327, lng: -80.104001},
+			{lat: 26.374322, lng: -80.104665},
+			{lat: 26.374338, lng: -80.104702}],
+		strokeColor: 'yellow',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'yellow',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lot7.setMap(map);
+	
 	var lot8 = new google.maps.Polygon({
 		paths: [
 			{lat: 26.373082, lng: -80.107020},
@@ -128,4 +144,60 @@ function yellowPark(map)
 		fillOpacity: 0.35 //This opacity will be to determine availability
 	});
 	lot27.setMap(map);
+	
+	var lotPBPla = new google.maps.Polygon({
+		paths: [
+			{lat: 26.372432, lng: -80.100672},
+			{lat: 26.372432, lng: -80.100183},
+			{lat: 26.372365, lng: -80.100183},
+			{lat: 26.372365, lng: -80.100672}],
+		strokeColor: 'yellow',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'yellow',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotPBPla.setMap(map);
+	var lotPBPlb = new google.maps.Polygon({
+		paths: [
+			{lat: 26.372051, lng: -80.101269},
+			{lat: 26.372090, lng: -80.101259},
+			{lat: 26.372143, lng: -80.101197},
+			{lat: 26.372157, lng: -80.101153},
+			{lat: 26.372159, lng: -80.101018},
+			{lat: 26.372093, lng: -80.101018},
+			{lat: 26.372093, lng: -80.101138},
+			{lat: 26.372074, lng: -80.101169},
+			{lat: 26.372043, lng: -80.101186},
+			{lat: 26.371653, lng: -80.101184},
+			{lat: 26.371627, lng: -80.101166},
+			{lat: 26.371613, lng: -80.101133},
+			{lat: 26.371610, lng: -80.101018},
+			{lat: 26.371610, lng: -80.101018},
+			{lat: 26.371540, lng: -80.101018},
+			{lat: 26.371544, lng: -80.101147},
+			{lat: 26.371554, lng: -80.101192},
+			{lat: 26.371580, lng: -80.101231},
+			{lat: 26.371618, lng: -80.101256},
+			{lat: 26.371660, lng: -80.101266}],
+		strokeColor: 'yellow',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'yellow',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotPBPlb.setMap(map);
+	var lotPBPlc = new google.maps.Polygon({
+		paths: [
+			{lat: 26.371338, lng: -80.100674},
+			{lat: 26.371338, lng: -80.100185},
+			{lat: 26.371265, lng: -80.100185},
+			{lat: 26.371265, lng: -80.100674}],
+		strokeColor: 'yellow',
+		strokeOpacity: 0.8,
+		strokeWeight: 2,
+		fillColor: 'yellow',
+		fillOpacity: 0.35 //This opacity will be to determine availability
+	});
+	lotPBPlc.setMap(map);
 }
